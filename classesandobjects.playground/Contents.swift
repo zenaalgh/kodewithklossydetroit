@@ -47,3 +47,56 @@ class Fish{
 }
 var pet = Fish(fishColor: "blue", fishAge: 2)
 pet.swim()
+
+
+
+class Dog{
+    var name = " "
+    var age = 0
+    var breed = " "
+    
+    init(dogName : String, dogAge : Int, dogBreed: String){
+        name = dogName
+        age = dogAge
+        breed = dogBreed
+        
+    
+    }
+   
+    func woof(){
+        print("i'm \(name), woof woof!")
+    }
+}
+    var breed = ["golden retriever", "beagle", "poodle"]
+    
+    for type in breed{
+    print ("my favorite dog is \(type)")
+    }
+//var dog = Dog(dogName : "Herman", dogAge: 0)
+
+
+//dog.woof()
+
+
+var breedsOfDogs = ["golden retriever", "beagle", "poodle"]
+print(breedsOfDogs.randomElement()!)
+
+
+//Code Challenge Day 4
+    
+for i in 1...100{
+    if i % 3  == 0 && i % 5 == 0{
+    print("Fizzbuzz")
+    }
+    else if i % 3 == 0{
+    print("Fizz")
+}
+    else if i % 5 == 0{
+    print("Buzz")
+    }
+    else
+    {
+        print (i)
+    }
+}
+
