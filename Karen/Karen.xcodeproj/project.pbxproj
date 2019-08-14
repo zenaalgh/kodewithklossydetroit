@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184A8DA223048659008436D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A8DA123048659008436D3 /* AppDelegate.swift */; };
+		184A8DA723048659008436D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184A8DA523048659008436D3 /* Main.storyboard */; };
+		184A8DAA2304865A008436D3 /* Karen.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 184A8DA82304865A008436D3 /* Karen.xcdatamodeld */; };
+		184A8DAC2304865A008436D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184A8DAB2304865A008436D3 /* Assets.xcassets */; };
+		184A8DAF2304865A008436D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184A8DAD2304865A008436D3 /* LaunchScreen.storyboard */; };
+		184A8DBA2304865A008436D3 /* KarenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A8DB92304865A008436D3 /* KarenTests.swift */; };
+		184A8DC52304865A008436D3 /* KarenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A8DC42304865A008436D3 /* KarenUITests.swift */; };
+		184A8DD3230486DA008436D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A8DD2230486DA008436D3 /* HomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		184A8DB62304865A008436D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184A8D9623048659008436D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184A8D9D23048659008436D3;
+			remoteInfo = Karen;
+		};
+		184A8DC12304865A008436D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 184A8D9623048659008436D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184A8D9D23048659008436D3;
+			remoteInfo = Karen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		184A8D9E23048659008436D3 /* Karen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184A8DA123048659008436D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		184A8DA623048659008436D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184A8DA92304865A008436D3 /* Karen.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Karen.xcdatamodel; sourceTree = "<group>"; };
+		184A8DAB2304865A008436D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184A8DAE2304865A008436D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184A8DB02304865A008436D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184A8DB52304865A008436D3 /* KarenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184A8DB92304865A008436D3 /* KarenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarenTests.swift; sourceTree = "<group>"; };
+		184A8DBB2304865A008436D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184A8DC02304865A008436D3 /* KarenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KarenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		184A8DC42304865A008436D3 /* KarenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarenUITests.swift; sourceTree = "<group>"; };
+		184A8DC62304865A008436D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184A8DD2230486DA008436D3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184A8D9B23048659008436D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A8DB22304865A008436D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A8DBD2304865A008436D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184A8D9523048659008436D3 = {
+			isa = PBXGroup;
+			children = (
+				184A8DA023048659008436D3 /* Karen */,
+				184A8DB82304865A008436D3 /* KarenTests */,
+				184A8DC32304865A008436D3 /* KarenUITests */,
+				184A8D9F23048659008436D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		184A8D9F23048659008436D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				184A8D9E23048659008436D3 /* Karen.app */,
+				184A8DB52304865A008436D3 /* KarenTests.xctest */,
+				184A8DC02304865A008436D3 /* KarenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184A8DA023048659008436D3 /* Karen */ = {
+			isa = PBXGroup;
+			children = (
+				184A8DA123048659008436D3 /* AppDelegate.swift */,
+				184A8DA523048659008436D3 /* Main.storyboard */,
+				184A8DD2230486DA008436D3 /* HomeViewController.swift */,
+				184A8DAB2304865A008436D3 /* Assets.xcassets */,
+				184A8DAD2304865A008436D3 /* LaunchScreen.storyboard */,
+				184A8DB02304865A008436D3 /* Info.plist */,
+				184A8DA82304865A008436D3 /* Karen.xcdatamodeld */,
+			);
+			path = Karen;
+			sourceTree = "<group>";
+		};
+		184A8DB82304865A008436D3 /* KarenTests */ = {
+			isa = PBXGroup;
+			children = (
+				184A8DB92304865A008436D3 /* KarenTests.swift */,
+				184A8DBB2304865A008436D3 /* Info.plist */,
+			);
+			path = KarenTests;
+			sourceTree = "<group>";
+		};
+		184A8DC32304865A008436D3 /* KarenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				184A8DC42304865A008436D3 /* KarenUITests.swift */,
+				184A8DC62304865A008436D3 /* Info.plist */,
+			);
+			path = KarenUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		184A8D9D23048659008436D3 /* Karen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184A8DC92304865A008436D3 /* Build configuration list for PBXNativeTarget "Karen" */;
+			buildPhases = (
+				184A8D9A23048659008436D3 /* Sources */,
+				184A8D9B23048659008436D3 /* Frameworks */,
+				184A8D9C23048659008436D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Karen;
+			productName = Karen;
+			productReference = 184A8D9E23048659008436D3 /* Karen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		184A8DB42304865A008436D3 /* KarenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184A8DCC2304865A008436D3 /* Build configuration list for PBXNativeTarget "KarenTests" */;
+			buildPhases = (
+				184A8DB12304865A008436D3 /* Sources */,
+				184A8DB22304865A008436D3 /* Frameworks */,
+				184A8DB32304865A008436D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184A8DB72304865A008436D3 /* PBXTargetDependency */,
+			);
+			name = KarenTests;
+			productName = KarenTests;
+			productReference = 184A8DB52304865A008436D3 /* KarenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		184A8DBF2304865A008436D3 /* KarenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184A8DCF2304865B008436D3 /* Build configuration list for PBXNativeTarget "KarenUITests" */;
+			buildPhases = (
+				184A8DBC2304865A008436D3 /* Sources */,
+				184A8DBD2304865A008436D3 /* Frameworks */,
+				184A8DBE2304865A008436D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				184A8DC22304865A008436D3 /* PBXTargetDependency */,
+			);
+			name = KarenUITests;
+			productName = KarenUITests;
+			productReference = 184A8DC02304865A008436D3 /* KarenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		184A8D9623048659008436D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = KWK;
+				TargetAttributes = {
+					184A8D9D23048659008436D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					184A8DB42304865A008436D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 184A8D9D23048659008436D3;
+					};
+					184A8DBF2304865A008436D3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 184A8D9D23048659008436D3;
+					};
+				};
+			};
+			buildConfigurationList = 184A8D9923048659008436D3 /* Build configuration list for PBXProject "Karen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 184A8D9523048659008436D3;
+			productRefGroup = 184A8D9F23048659008436D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184A8D9D23048659008436D3 /* Karen */,
+				184A8DB42304865A008436D3 /* KarenTests */,
+				184A8DBF2304865A008436D3 /* KarenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		184A8D9C23048659008436D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184A8DAF2304865A008436D3 /* LaunchScreen.storyboard in Resources */,
+				184A8DAC2304865A008436D3 /* Assets.xcassets in Resources */,
+				184A8DA723048659008436D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A8DB32304865A008436D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A8DBE2304865A008436D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		184A8D9A23048659008436D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184A8DAA2304865A008436D3 /* Karen.xcdatamodeld in Sources */,
+				184A8DA223048659008436D3 /* AppDelegate.swift in Sources */,
+				184A8DD3230486DA008436D3 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A8DB12304865A008436D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184A8DBA2304865A008436D3 /* KarenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184A8DBC2304865A008436D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184A8DC52304865A008436D3 /* KarenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		184A8DB72304865A008436D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184A8D9D23048659008436D3 /* Karen */;
+			targetProxy = 184A8DB62304865A008436D3 /* PBXContainerItemProxy */;
+		};
+		184A8DC22304865A008436D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 184A8D9D23048659008436D3 /* Karen */;
+			targetProxy = 184A8DC12304865A008436D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		184A8DA523048659008436D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184A8DA623048659008436D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184A8DAD2304865A008436D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184A8DAE2304865A008436D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		184A8DC72304865A008436D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		184A8DC82304865A008436D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		184A8DCA2304865A008436D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Karen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zena.Karen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184A8DCB2304865A008436D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Karen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zena.Karen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		184A8DCD2304865B008436D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KarenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zena.KarenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Karen.app/Karen";
+			};
+			name = Debug;
+		};
+		184A8DCE2304865B008436D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KarenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zena.KarenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Karen.app/Karen";
+			};
+			name = Release;
+		};
+		184A8DD02304865B008436D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KarenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zena.KarenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Karen;
+			};
+			name = Debug;
+		};
+		184A8DD12304865B008436D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KarenUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Zena.KarenUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Karen;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184A8D9923048659008436D3 /* Build configuration list for PBXProject "Karen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184A8DC72304865A008436D3 /* Debug */,
+				184A8DC82304865A008436D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184A8DC92304865A008436D3 /* Build configuration list for PBXNativeTarget "Karen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184A8DCA2304865A008436D3 /* Debug */,
+				184A8DCB2304865A008436D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184A8DCC2304865A008436D3 /* Build configuration list for PBXNativeTarget "KarenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184A8DCD2304865B008436D3 /* Debug */,
+				184A8DCE2304865B008436D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184A8DCF2304865B008436D3 /* Build configuration list for PBXNativeTarget "KarenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184A8DD02304865B008436D3 /* Debug */,
+				184A8DD12304865B008436D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		184A8DA82304865A008436D3 /* Karen.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				184A8DA92304865A008436D3 /* Karen.xcdatamodel */,
+			);
+			currentVersion = 184A8DA92304865A008436D3 /* Karen.xcdatamodel */;
+			path = Karen.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 184A8D9623048659008436D3 /* Project object */;
+}
