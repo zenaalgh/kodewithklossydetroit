@@ -12,19 +12,25 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+    //donate buttons
+    @IBAction func donate(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string:"https://www.nationalforests.org/donate/give")! as URL, options: [:],completionHandler: nil)
+    }
+    @IBAction func donateplastic(_ sender: UIButton) {
+         UIApplication.shared.open(URL(string:"https://www.plasticpollutioncoalition.org/donate")! as URL, options: [:],completionHandler: nil)
+    }
+    @IBAction func donateoceans(_ sender: UIButton) {
+     UIApplication.shared.open(URL(string:"https://theoceancleanup.com/donate/")! as URL, options: [:],completionHandler: nil)
+    }
+    //quiz starts here
+   
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
+    
+    
+    
+    
+    
 }
