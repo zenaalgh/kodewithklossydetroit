@@ -18,23 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Karen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMM-s8-v0g">
-                                <rect key="frame" x="107" y="59" width="161" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMM-s8-v0g">
+                                <rect key="frame" x="107" y="59" width="161" height="55"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="...about you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-l1-cBz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...about you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pba-l1-cBz">
                                 <rect key="frame" x="183" y="120" width="108" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-MK-TpY">
-                                <rect key="frame" x="137" y="576" width="100" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-MK-TpY">
+                                <rect key="frame" x="137" y="606" width="100" height="41"/>
                                 <color key="backgroundColor" red="0.11925441771745682" green="0.13194191455841064" blue="0.34762865304946899" alpha="0.74125107020547942" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="start">
@@ -44,20 +41,33 @@
                                     <segue destination="V23-xX-ci9" kind="show" id="Q19-nu-ogS"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="C2Z-fw-Knz">
-                                <rect key="frame" x="7" y="133" width="361" height="466"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="C2Z-fw-Knz">
+                                <rect key="frame" x="0.0" y="149" width="374" height="438"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.40220242738723755" green="0.5568731427192688" blue="0.63595849275588989" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xG5-MK-TpY" firstAttribute="leading" secondItem="lwX-C1-Vu8" secondAttribute="leading" constant="137" id="52S-aH-80E"/>
+                            <constraint firstItem="lwX-C1-Vu8" firstAttribute="trailing" secondItem="xG5-MK-TpY" secondAttribute="trailing" constant="138" id="6P7-Ik-cxO"/>
+                            <constraint firstItem="lwX-C1-Vu8" firstAttribute="trailing" secondItem="nMM-s8-v0g" secondAttribute="trailing" constant="107" id="BME-4a-B5U"/>
+                            <constraint firstItem="nMM-s8-v0g" firstAttribute="top" secondItem="lwX-C1-Vu8" secondAttribute="top" constant="39" id="HWF-1D-WY5"/>
+                            <constraint firstItem="C2Z-fw-Knz" firstAttribute="leading" secondItem="lwX-C1-Vu8" secondAttribute="leading" id="Q0j-ed-3kW"/>
+                            <constraint firstItem="xG5-MK-TpY" firstAttribute="top" secondItem="C2Z-fw-Knz" secondAttribute="bottom" constant="19" id="UfU-ZV-cri"/>
+                            <constraint firstItem="C2Z-fw-Knz" firstAttribute="top" secondItem="nMM-s8-v0g" secondAttribute="bottom" constant="35" id="Xwe-uh-nnm"/>
+                            <constraint firstItem="lwX-C1-Vu8" firstAttribute="trailing" secondItem="Pba-l1-cBz" secondAttribute="trailing" constant="84" id="ezT-mo-IGM"/>
+                            <constraint firstItem="Pba-l1-cBz" firstAttribute="top" secondItem="nMM-s8-v0g" secondAttribute="bottom" constant="6" id="lOF-Es-JgW"/>
+                            <constraint firstItem="lwX-C1-Vu8" firstAttribute="trailing" secondItem="C2Z-fw-Knz" secondAttribute="trailing" constant="1" id="sOF-Rh-n8h"/>
+                            <constraint firstItem="nMM-s8-v0g" firstAttribute="leading" secondItem="lwX-C1-Vu8" secondAttribute="leading" constant="107" id="xSY-bE-dFS"/>
+                            <constraint firstItem="Pba-l1-cBz" firstAttribute="leading" secondItem="lwX-C1-Vu8" secondAttribute="leading" constant="183" id="yB9-PX-1gD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="lwX-C1-Vu8"/>
                     </view>
                     <navigationItem key="navigationItem" id="36N-Ob-mXt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aD8-Pn-JqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="979.71014492753636" y="158.70535714285714"/>
+            <point key="canvasLocation" x="978.39999999999998" y="157.87106446776613"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="cw1-1I-fgH">
@@ -67,30 +77,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="main menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U36-4q-mKO">
-                                <rect key="frame" x="130" y="64" width="114" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00e-UA-p3N">
-                                <rect key="frame" x="122" y="146" width="130" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asM-JX-9SD">
+                                <rect key="frame" x="122" y="260" width="130" height="44"/>
                                 <color key="backgroundColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="about us">
-                                    <color key="titleColor" red="0.6055489182472229" green="0.79656654596328735" blue="0.25578317046165466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="69q-cJ-x1Q" kind="show" id="qN8-Jr-9lX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asM-JX-9SD">
-                                <rect key="frame" x="122" y="271" width="130" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                 <state key="normal" title="plastics">
                                     <color key="titleColor" red="0.6055489182472229" green="0.79656654596328735" blue="0.25578317046165466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -98,11 +88,10 @@
                                     <segue destination="W5M-wS-8yH" kind="show" id="E5b-j5-gNv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zJ-uC-pVi">
-                                <rect key="frame" x="122" y="407" width="130" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zJ-uC-pVi">
+                                <rect key="frame" x="122" y="366" width="130" height="44"/>
                                 <color key="backgroundColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                 <state key="normal" title="oceans">
                                     <color key="titleColor" red="0.6055489182472229" green="0.79656654596328735" blue="0.25578317046165466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -110,11 +99,27 @@
                                     <segue destination="vfk-fW-XI3" kind="show" id="5aA-Ih-mx9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-07-I4M">
-                                <rect key="frame" x="122" y="535" width="130" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00e-UA-p3N">
+                                <rect key="frame" x="122" y="149" width="130" height="44"/>
                                 <color key="backgroundColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <state key="normal" title="about us">
+                                    <color key="titleColor" red="0.6055489182472229" green="0.79656654596328735" blue="0.25578317046165466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="69q-cJ-x1Q" kind="show" id="qN8-Jr-9lX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="main menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U36-4q-mKO">
+                                <rect key="frame" x="113" y="65" width="148" height="33.5"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="27"/>
+                                <color key="textColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrc-07-I4M">
+                                <rect key="frame" x="122" y="473" width="130" height="44"/>
+                                <color key="backgroundColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
                                 <color key="tintColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="forests">
                                     <color key="titleColor" red="0.6055489182472229" green="0.79656654596328735" blue="0.25578317046165466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,12 +130,29 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.6055489182472229" green="0.79656654596328735" blue="0.25578317046165466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U36-4q-mKO" firstAttribute="top" secondItem="ftl-9U-km0" secondAttribute="top" constant="45" id="1jf-Op-aup"/>
+                            <constraint firstItem="Wrc-07-I4M" firstAttribute="top" secondItem="2zJ-uC-pVi" secondAttribute="bottom" constant="63" id="8Rg-O3-W2j"/>
+                            <constraint firstItem="asM-JX-9SD" firstAttribute="leading" secondItem="ftl-9U-km0" secondAttribute="leading" constant="122" id="Cod-a7-tOc"/>
+                            <constraint firstItem="asM-JX-9SD" firstAttribute="top" secondItem="00e-UA-p3N" secondAttribute="bottom" constant="67" id="Gch-GH-mH1"/>
+                            <constraint firstItem="2zJ-uC-pVi" firstAttribute="leading" secondItem="ftl-9U-km0" secondAttribute="leading" constant="122" id="Iq4-al-9RX"/>
+                            <constraint firstItem="ftl-9U-km0" firstAttribute="trailing" secondItem="00e-UA-p3N" secondAttribute="trailing" constant="123" id="RlM-3I-8gs"/>
+                            <constraint firstItem="U36-4q-mKO" firstAttribute="leading" secondItem="ftl-9U-km0" secondAttribute="leading" constant="113" id="Wg1-Q0-BrI"/>
+                            <constraint firstItem="ftl-9U-km0" firstAttribute="trailing" secondItem="U36-4q-mKO" secondAttribute="trailing" constant="114" id="aLo-ew-8Nm"/>
+                            <constraint firstItem="00e-UA-p3N" firstAttribute="top" secondItem="U36-4q-mKO" secondAttribute="bottom" constant="50.5" id="fvi-sI-Aci"/>
+                            <constraint firstItem="Wrc-07-I4M" firstAttribute="leading" secondItem="ftl-9U-km0" secondAttribute="leading" constant="122" id="j7I-8E-gfi"/>
+                            <constraint firstItem="ftl-9U-km0" firstAttribute="trailing" secondItem="Wrc-07-I4M" secondAttribute="trailing" constant="123" id="kEI-yR-TBj"/>
+                            <constraint firstItem="00e-UA-p3N" firstAttribute="leading" secondItem="ftl-9U-km0" secondAttribute="leading" constant="122" id="kKd-ZS-Hiv"/>
+                            <constraint firstItem="ftl-9U-km0" firstAttribute="trailing" secondItem="asM-JX-9SD" secondAttribute="trailing" constant="123" id="rol-If-7Wp"/>
+                            <constraint firstItem="ftl-9U-km0" firstAttribute="trailing" secondItem="2zJ-uC-pVi" secondAttribute="trailing" constant="123" id="u4X-37-hV1"/>
+                            <constraint firstItem="2zJ-uC-pVi" firstAttribute="top" secondItem="asM-JX-9SD" secondAttribute="bottom" constant="62" id="vzk-oD-39Y"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ftl-9U-km0"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lE9-3D-9jO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808.6956521739132" y="158.70535714285714"/>
+            <point key="canvasLocation" x="1807.2" y="157.87106446776613"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="6kb-Y8-TOJ">
@@ -140,26 +162,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oceans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-Rf-UA5">
-                                <rect key="frame" x="144" y="32" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.35294117650000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.3529411764705882" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCn-k1-dTK">
-                                <rect key="frame" x="16" y="0.0" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCn-k1-dTK">
+                                <rect key="frame" x="16" y="20" width="53" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
                                     <color key="titleColor" red="0.12014449387788773" green="0.14148086309432983" blue="0.35904917120933533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="V23-xX-ci9" kind="show" id="tIb-2c-GMG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdR-6e-Tae">
-                                <rect key="frame" x="4" y="40" width="195" height="179"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DdR-6e-Tae">
+                                <rect key="frame" x="34" y="104" width="194" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Each year billions of pounds of pollutants enter the ocean. Pollutants include oil from oil spills, pesticides, fertilizers, industrial chemicals, and sewage.
 </string>
@@ -168,21 +182,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-6" translatesAutoresizingMaskIntoConstraints="NO" id="de7-TI-ylL">
-                                <rect key="frame" x="183" y="58" width="195" height="143"/>
+                                <rect key="frame" x="236" y="97" width="166" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOO-I8-gYZ">
-                                <rect key="frame" x="4" y="199" width="347" height="152"/>
+                                <rect key="frame" x="61" y="266" width="308" height="70.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Effects of Ocean Pollution
--It effects the food we eat because if we eat fish they aren't getting the proper nutrients and are eating plastic so they are harmful for us to eat -Fish choke and consume plastic killing sea animals like TURTLES!
+Sea life consume and choke on plastic killing them and this include TURTLES!
 </string>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.35294117650000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYj-Vg-p95">
-                                <rect key="frame" x="-13" y="407" width="400" height="232"/>
+                                <rect key="frame" x="29" y="446" width="373" height="201"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text"> Things You Can Do to Save the Ocean
 1. Mind Your Carbon Footprint and Reduce Energy Consumption
@@ -191,17 +205,13 @@
 3. Help Take Care of the Beach. 
 4. Don't Purchase Items That Exploit Marine Life. 
 5. Support Organizations Working to Protect the Ocean.
-6. Influence Change in Your Community.</string>
+</string>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.3529411764705882" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whale_plastics_resize_md" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-Pz-36V">
-                                <rect key="frame" x="83" y="325" width="209" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ylz-ir-Dsh">
-                                <rect key="frame" x="148" y="623" width="78" height="33"/>
+                                <rect key="frame" x="183" y="624" width="65" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.35294117650000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -213,14 +223,30 @@
                                     <segue destination="vfk-fW-XI3" kind="show" id="Wiy-E2-8m1"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whale_plastics_resize_md" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-Pz-36V">
+                                <rect key="frame" x="91" y="319" width="249" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oceans" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-Rf-UA5">
+                                <rect key="frame" x="156" y="72" width="92" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.35294117650000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.3529411764705882" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.30980392156862746" green="0.80000000000000004" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yCn-k1-dTK" firstAttribute="leading" secondItem="MnW-4V-7AX" secondAttribute="leading" constant="20" id="eHc-gs-TAM"/>
+                            <constraint firstItem="yCn-k1-dTK" firstAttribute="top" secondItem="MnW-4V-7AX" secondAttribute="top" id="gQt-Ch-0II"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MnW-4V-7AX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ocz-CM-67c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530.4000000000001" y="166.8665667166417"/>
+            <point key="canvasLocation" x="2528.8000000000002" y="165.06746626686657"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MUB-1n-59A">
@@ -231,16 +257,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1L0-p4-2b6">
-                                <rect key="frame" x="153" y="44" width="67" height="20"/>
+                                <rect key="frame" x="158" y="59" width="91" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeS-bS-pIs">
+                                <rect key="frame" x="34" y="95" width="339" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Hello! We are three high schoolers from Michigan. The three of us make up Coal, who is a friend of ours whose mother, Karen, was very passionate about the Earth and how we treat it. We were inspired to make “Karen About You” by the environmental impact we were seeing in our daily lives, made obvious by Coal and Karen. </string>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLa-fK-TB6">
-                                <rect key="frame" x="0.0" y="20" width="85" height="45"/>
+                                <rect key="frame" x="16" y="32" width="53" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
                                     <color key="titleColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -248,19 +283,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image from iOS" translatesAutoresizingMaskIntoConstraints="NO" id="W2H-vR-yft">
-                                <rect key="frame" x="16" y="186" width="345" height="329"/>
+                                <rect key="frame" x="38" y="280" width="330" height="202"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="23" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeS-bS-pIs">
-                                <rect key="frame" x="24" y="44" width="335" height="231"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Hello! We are three high schoolers from Michigan. The three of us make up Coal, who is a friend of ours whose mother, Karen, was very passionate about the Earth and how we treat it. We were inspired to make “Karen About You” by the environmental impact we were seeing in our daily lives, made obvious by Coal and Karen. </string>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea7-rp-ORu">
-                                <rect key="frame" x="33" y="459" width="307" height="169"/>
+                                <rect key="frame" x="52" y="501" width="307" height="138"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">As times continue, the damage is only getting worse and we are trying to prevent irreversible damage. By creating this app and providing tips and donation links, we are spreading awareness on the issues we are facing globally. </string>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
@@ -274,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fi-DQ-DXO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2511.1999999999998" y="-1200.4497751124438"/>
+            <point key="canvasLocation" x="2509.5999999999999" y="-1201.3493253373315"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="HIB-or-cWM">
@@ -284,17 +311,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plastics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLB-Vb-ZET">
-                                <rect key="frame" x="148" y="12" width="98" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
-                                <color key="textColor" red="0.51351618766784668" green="0.28351438045501709" blue="0.62313491106033325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiQ-5E-GFh">
-                                <rect key="frame" x="0.0" y="8" width="121" height="42"/>
+                                <rect key="frame" x="16" y="44" width="53" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="&lt; Back">
                                     <color key="titleColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -302,7 +323,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kP8-9C-d5a">
-                                <rect key="frame" x="43" y="55" width="308" height="211"/>
+                                <rect key="frame" x="56" y="85" width="314" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Single use plastics are plastics that only have one intended use, and after they complete the task, are usually thrown out. Examples of this include plastic straws, water bottles, cups, or bags. Single use plastics are expected to make up half of the plastic production each year. Only around 9% of plastic is actually recycled, while the other 91% goes into our environment.
 </string>
@@ -310,25 +331,8 @@
                                 <color key="textColor" red="0.79590922594070435" green="0.34255015850067139" blue="0.52839279174804688" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="r1V-Vt-Vaz">
-                                <rect key="frame" x="87" y="249" width="211" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-hi-d6N">
-                                <rect key="frame" x="161" y="624" width="53" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.51351618766784668" green="0.28351438045501709" blue="0.62313491106033325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Donate">
-                                    <color key="titleColor" red="0.95440477132797241" green="0.63267779350280762" blue="0.56142157316207886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="donateplastic:" destination="W5M-wS-8yH" eventType="touchUpInside" id="3hV-Mn-PoP"/>
-                                    <segue destination="W5M-wS-8yH" kind="show" id="cvf-I5-ZKf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77G-Fz-ePW">
-                                <rect key="frame" x="-5" y="365" width="385" height="135"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77G-Fz-ePW">
+                                <rect key="frame" x="31" y="387" width="365" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Ways to help:
 Switch to reusable products (straws, bags, bottles)
@@ -341,9 +345,33 @@ Use real silverware instead of plastics
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image (1)" translatesAutoresizingMaskIntoConstraints="NO" id="F41-gq-DR5">
-                                <rect key="frame" x="94" y="498" width="196" height="103"/>
+                                <rect key="frame" x="122" y="528" width="182" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plastics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLB-Vb-ZET">
+                                <rect key="frame" x="143" y="45" width="89" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
+                                <color key="textColor" red="0.51351618766784668" green="0.28351438045501709" blue="0.62313491106033325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-1" translatesAutoresizingMaskIntoConstraints="NO" id="r1V-Vt-Vaz">
+                                <rect key="frame" x="132" y="276" width="163" height="114"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-hi-d6N">
+                                <rect key="frame" x="184" y="645" width="59" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.51351618766784668" green="0.28351438045501709" blue="0.62313491106033325" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" red="0.95440477132797241" green="0.63267779350280762" blue="0.56142157316207886" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="donateplastic:" destination="W5M-wS-8yH" eventType="touchUpInside" id="3hV-Mn-PoP"/>
+                                    <segue destination="W5M-wS-8yH" kind="show" id="cvf-I5-ZKf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95318108797073364" green="0.63812142610549927" blue="0.6636817455291748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="TpC-u0-Mp5"/>
@@ -361,17 +389,10 @@ Use real silverware instead of plastics
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naV-rp-iif">
-                                <rect key="frame" x="179" y="100" width="57" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNt-aI-08f">
+                                <rect key="frame" x="26" y="41" width="53" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNt-aI-08f">
-                                <rect key="frame" x="48" y="64" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back">
+                                <state key="normal" title="&lt; Back">
                                     <color key="titleColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -379,101 +400,110 @@ Use real silverware instead of plastics
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYv-BW-5y3">
-                                <rect key="frame" x="11" y="175" width="181" height="119"/>
+                                <rect key="frame" x="9" y="351" width="239" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Deforestation is the permanent destruction of forests in order to make the land available for other uses. An estimated 18 million acres of forest, which is roughly the size of the country of Panama.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-3" translatesAutoresizingMaskIntoConstraints="NO" id="BOK-6W-ex1">
-                                <rect key="frame" x="146" y="269" width="240" height="128"/>
+                                <rect key="frame" x="94" y="186" width="186" height="176"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMd-7P-NMd">
-                                <rect key="frame" x="20" y="196" width="300" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Why is deforestation a threat to the environment?
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ic-VJ-el6">
-                                <rect key="frame" x="118" y="151" width="184" height="89"/>
+                                <rect key="frame" x="67" y="101" width="240" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Due to deforestation the homes of millions of species has vanish , exposes soil to rainfall and leads to soil erosion and thus top fertile soil can be loss.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx5-K6-ktd">
-                                <rect key="frame" x="-15" y="441" width="251" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Here's what you can do about deforestation.
-</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHy-6L-Qd1">
-                                <rect key="frame" x="48" y="279" width="225" height="62"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHy-6L-Qd1">
+                                <rect key="frame" x="52" y="553" width="283" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">1. Plant a tree.
 2. Go paperless.
 3. Recycle and buy recycled products.
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-5" translatesAutoresizingMaskIntoConstraints="NO" id="Ukw-6P-tJK">
-                                <rect key="frame" x="174" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4b-iM-JRp">
-                                <rect key="frame" x="28" y="151" width="138" height="16"/>
+                                <rect key="frame" x="113" y="100" width="178" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">What is Deforestation?
 </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.11311087757349014" green="0.22220659255981445" blue="0.098382122814655304" alpha="0.9960784912109375" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpl-Jh-Jg3">
-                                <rect key="frame" x="85" y="464" width="50" height="30"/>
+                                <rect key="frame" x="151" y="617" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Donate"/>
+                                <color key="backgroundColor" red="0.37222898006439209" green="0.82826477289199829" blue="0.6324039101600647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" red="0.1272570788860321" green="0.14947584271430969" blue="0.37332424521446228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="donate:" destination="Jzc-Xs-izp" eventType="touchUpInside" id="54R-du-wTn"/>
                                     <action selector="donate:" destination="Wwd-gd-uB3" eventType="touchUpInside" id="8s5-Sv-eB1"/>
                                     <segue destination="Wwd-gd-uB3" kind="show" id="GoR-De-AZZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-4" translatesAutoresizingMaskIntoConstraints="NO" id="QaD-sK-eLc">
-                                <rect key="frame" x="50" y="248" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download-8" translatesAutoresizingMaskIntoConstraints="NO" id="zfq-WT-DaL">
+                                <rect key="frame" x="251" y="341" width="124" height="193"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naV-rp-iif">
+                                <rect key="frame" x="155" y="67" width="76" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <color key="textColor" red="0.024817295372486115" green="0.18149673938751221" blue="0.35916483402252197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx5-K6-ktd" userLabel="Here's what you can do about deforestation.">
+                                <rect key="frame" x="74" y="512" width="239" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Here's what you can do about deforestation.
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.27646037936210632" green="0.43655037879943848" blue="0.20948860049247742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMd-7P-NMd">
+                                <rect key="frame" x="9" y="330" width="404" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Why is deforestation a threat to the environment?
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.132597416639328" green="0.30985558032989502" blue="0.080145470798015594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.65437871217727661" green="0.8828510046005249" blue="0.79601114988327026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oNt-aI-08f" firstAttribute="leading" secondItem="Mue-UV-BYL" secondAttribute="leading" constant="26" id="9rZ-ym-Ai8"/>
+                            <constraint firstItem="oNt-aI-08f" firstAttribute="top" secondItem="pa1-To-43O" secondAttribute="top" constant="41" id="BfW-Hp-t3P"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Mue-UV-BYL"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xon-XL-meG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Jzc-Xs-izp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2528.985507246377" y="837.72321428571422"/>
+            <point key="canvasLocation" x="2525.5999999999999" y="836.13193403298362"/>
         </scene>
     </scenes>
     <resources>
         <image name="Image from iOS" width="2208" height="1242"/>
         <image name="download" width="500" height="500"/>
         <image name="download-3" width="287" height="176"/>
-        <image name="download-4" width="272" height="185"/>
-        <image name="download-5" width="227" height="222"/>
         <image name="download-6" width="240" height="210"/>
+        <image name="download-8" width="224" height="224"/>
         <image name="image (1)" width="1158" height="670"/>
         <image name="images-1" width="259" height="194"/>
         <image name="whale_plastics_resize_md" width="744" height="389"/>
